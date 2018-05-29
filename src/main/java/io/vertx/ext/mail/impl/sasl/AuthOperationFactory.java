@@ -35,7 +35,8 @@ public class AuthOperationFactory {
       AuthCramSHA1.class,
       AuthCramMD5.class,
       AuthPlain.class,
-      AuthLogin.class
+      AuthLogin.class,
+      AuthXOAUTH2.class
   };
 
   public static AuthOperation createAuth(String username, String password, Set<String> allowedMethods)
